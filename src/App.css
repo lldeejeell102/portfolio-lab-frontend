@@ -46,7 +46,11 @@
 }
 
 a{
-  color: var(--textColor3);
+  color: var(--textColor);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--textColor2)
 }
 body{
   background-color: var(--backgroundColorDark);
@@ -155,5 +159,30 @@ footer a{
 .about{
   display:flex;
   flex-direction: column;
+}
+
+.about h2{
   margin: 1rem;
+  color: var(--textColor);
+  padding: 2rem;
+  border: 2px solid whitesmoke;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: fit-content;
+}
+.projects div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects img{
+  height: 350px;
+  width: fit-content;
 }
