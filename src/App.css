@@ -53,11 +53,64 @@ body{
   color: var(--textColor);
 }
 header{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.nav{
+  display:flex;
+  justify-content: space-between;
 }
 header h1{
   font-size: 48px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+header .title{
+  display:flex;
+  justify-content: center;
+}
+header .nav-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.nav-about{
+  margin-right: 15px;
+}
+/* ////////////////////////////////////////////////////////// */
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #F4ACB7;
+  --color-2: #D8E2DC;
+  --color-3: #FFFFFF;
+}
+
+.title-word-2 {
+  --color-1: #B3B3F1;
+  --color-2: whitesmoke;
+  --color-3: #CEC2FF;
+}
+
+.title-word-3 {
+  --color-1: #92B4F4;
+  --color-2: #5E7CE2;
+  --color-3: #CFDEE7;
+}
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+/* ////////////////////////////////////////////////////// */
 
 
 .home-page{
@@ -67,7 +120,9 @@ header h1{
   display:flex;
   flex-direction: column;
   color: var(--textColor);
-  width: 80%;
+  /* width: 80%; */
+  padding: 2rem;
+  border: 2px solid var(--textColor2);
   /* justify-content: center; */
 }
 
@@ -83,5 +138,22 @@ header h1{
 
 
 footer{
-  display: block;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 10px;
+}
+footer div{
+  margin-right: 10px;
+}
+footer a{
+  text-decoration: none;
+  color: var(--textColor)
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+.about{
+  display:flex;
+  flex-direction: column;
+  margin: 1rem;
 }

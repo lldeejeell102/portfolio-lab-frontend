@@ -2,7 +2,9 @@ function Footer(props) {
     return (
       <footer>
         ©2024
-        <a href="">dji.com</a>
+        <div>
+          <a target="_blank" href="https://www.linkedin.com/in/danji90">dji.com</a>
+        </div>
       </footer>
     );
   }

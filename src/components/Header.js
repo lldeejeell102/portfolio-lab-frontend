@@ -12,17 +12,25 @@ function Header(props) {
     
     return (
         <header>
-            <h1>My Portfolio Page</h1>
-            <nav style={navStyle}>
+            <div className="title">
+                <h1 className="title-word title-word-1">My</h1>
+                <h1 className="title-word title-word-2">Portfolio</h1>
+                <h1 className="title-word title-word-3">Page</h1>
+            </div>
+            <nav className="nav" style={navStyle}>
                 <Link to="/">
                     <div>HOME</div>
                 </Link>
-                <Link to="/about">
-                    <div>ABOUT</div>
-                </Link>
-                <Link to="/projects">
-                    <div>PROJECTS</div>
-                </Link>
+                <div className="nav-right">
+                    <div className="nav-about">
+                        <Link to="/about">
+                            <div>ABOUT</div>
+                        </Link>
+                    </div>
+                    <Link to="/projects">
+                        <div>PROJECTS</div>
+                    </Link>
+                </div>
             </nav>
         </header>
     )
