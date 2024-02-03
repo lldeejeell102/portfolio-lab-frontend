@@ -1,6 +1,7 @@
 /* .App {
   text-align: center;
 } */
+/* https://dunks1980.com/ */
 
 .App-logo {
   height: 40vmin;
@@ -35,6 +36,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+:root{
+  --textColor: #DAD7CD;
+  --textColor2: #A3B18A;
+  --textColor3: #588157;
+  --backgroundColor: #3A5A40;
+  --backgroundColorDark: #344E41;
+}
+
+a{
+  color: var(--textColor3);
+}
+body{
+  background-color: var(--backgroundColorDark);
+  color: var(--textColor);
+}
+.home-page{
+  padding: 50px;
+}
+.main-message{
+  display:flex;
+  flex-direction: column;
+  color: var(--textColor);
+  width: 80%;
+  /* justify-content: center; */
+}
+
+.main-message p{
+  margin-left: 30px;
+}
+.main-message div:before{
+  content:" ";
+  width: 2px;
+  background: red;
+  left: -30px;
 }
 
 
